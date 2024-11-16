@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Misspelled Words</title>
+</head>
+<body>
+    <h2>Misspelled Words</h2>
+    <ul>
+        {% for word in words %}
+        <li>{{ word }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('home') }}">Home</a>
+</body>
+</html>
