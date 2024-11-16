@@ -1,7 +1,2 @@
 Flask==3.0.3
-gTTS==2.5.3
-
-# nltk==3.6.3
-
-# pygame==2.5.2  
-# Make sure to specify the latest version
+requests==2.28.1  # To make HTTP requests for fetching definitions and example sentences
