@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Misspelled Words</title>
+</head>
+<body>
+    <h2>Edit Misspelled Words</h2>
+
+    <form method="POST">
+        <label for="word">Word:</label>
+        <input type="text" name="word" id="word" required>
+        <select name="action">
+            <option value="add">Add</option>
+            <option value="delete">Delete</option>
+        </select>
+        <button type="submit">Update List</button>
+    </form>
+
+    <h3>Misspelled Words:</h3>
+    <ul>
+        {% for word in words %}
+        <li>{{ word }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('home') }}">Home</a>
+</body>
+</html>
