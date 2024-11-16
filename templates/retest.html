@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retake Test</title>
+</head>
+<body>
+    <h2>Retake Test</h2>
+    <p>Spell the word: {{ current_word }}</p>
+
+    <form method="POST">
+        <input type="text" name="user_input" required placeholder="Your answer">
+        <input type="hidden" name="correct_word" value="{{ current_word }}">
+        <button type="submit">Submit</button>
+    </form>
+
+    <a href="{{ url_for('historical_misspelled_word_list') }}">Back to Historical Misspelled Words</a>
+</body>
+</html>
