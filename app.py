@@ -16,7 +16,9 @@ ALPHABET_TESTS = {
     "applause", "aptitude", "aquamarine", "arcade", "arrangement", "assortment",
     "athletic", "attractive", "auditory", "avalanche", "avocado"],
     'b': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
-    'c': ["cat"],
+    'c': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'd': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'e': ["cat"],
 }
 
 # Initialize the session for storing user progress and historical words
