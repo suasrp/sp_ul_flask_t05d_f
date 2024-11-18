@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play Sound</title>
-    <script src="https://code.responsivevoice.org/responsivevoice.js?key=your_api_key"></script> <!-- Replace with your API key -->
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=Ytp4Wvua"></script>
+    #<script src="https://code.responsivevoice.org/responsivevoice.js?key=your_api_key"></script> <!-- Replace with your API key -->
 </head>
 <body>
     <h2>Pronunciation of the Word: {{ current_word }}</h2>
-    <button onclick="responsiveVoice.speak('{{ current_word }}', 'US English Male')">Pronounce</button>
+    <button onclick="responsiveVoice.speak('{{ current_word }}', 'US English Female')">Pronounce</button>
     <a href="{{ url_for('start_test', letter=request.args.get('letter')) }}">Back to Test</a>
 </body>
 </html>
