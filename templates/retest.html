@@ -10,7 +10,7 @@
     <p>Spell the word: {{ current_word }}</p>
 
     <form method="POST">
-        <input type="text" name="user_input" required placeholder="Your answer">
+        <input type="text" name="user_input" required placeholder="Your answer" required autofocus>
         <input type="hidden" name="correct_word" value="{{ current_word }}">
         <button type="submit">Submit</button>
     </form>
