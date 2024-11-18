@@ -17,7 +17,29 @@ ALPHABET_TESTS = {
     "athletic", "attractive", "auditory", "avalanche", "avocado"],
     'b': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
     'c': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
-    'd': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"]
+    'd': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'e': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'f': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'g': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'h': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'i': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'j': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'k': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'l': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'm': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'n': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'o': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'p': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'q': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'r': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    's': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    't': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'u': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'v': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'w': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'x': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'y': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    'z': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"]
 }
 
 # Initialize the session for storing user progress and historical words
