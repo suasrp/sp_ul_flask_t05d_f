@@ -15,7 +15,16 @@ ALPHABET_TESTS = {
     "annex", "antibacterial", "antibiotic", "anxiety", "apparition", "appease",
     "applause", "aptitude", "aquamarine", "arcade", "arrangement", "assortment",
     "athletic", "attractive", "auditory", "avalanche", "avocado"],
-    'b': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
+    
+    'b': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette", 
+    "bashfulness", "beacon", "bedazzle", "bedridden", "beforehand", "behavior",
+    "believable", "beneficial", "benevolent", "biannual", "bicultural", "bicycle",
+    "billionaire", "bimonthly", "biodiversity", "bionics", "birthmark", "blamable",
+    "blarney", "blissful", "blistering", "bluebonnet", "bolster", "bonfire",
+    "boomerang", "botulism", "boulevard", "bountiful", "braggart", "braille",
+    "brainstorm", "brilliance", "brisket", "brooch", "buffered", "buffoonery",
+    "bulbous", "bureau", "burglarize"],
+    
     'c': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
     'd': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
     'e': ["badminton", "balky", "Ballyhoo", "barbarian", "bareback", "bargain", "barrette"],
