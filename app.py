@@ -250,18 +250,28 @@ def pronounce_word(word):
 
 @app.route('/get_definition/<word>')
 def get_definition(word):
-    api_key = 'your_wordnik_api_key'  # Replace with your Wordnik API key
-    response = requests.get(f"https://api.wordnik.com/v4/word.json/{word}/definitions?api_key={api_key}")
+    response = requests.get(f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}")
     data = response.json()
-    definition = data[0]['text'] if data else "No definition found."
+    definition = data[0]['meanings'][0]['definitions'][0]['definition'] if data else "No definition found."
+    
+    #api_key = 'your_wordnik_api_key'  # Replace with your Wordnik API key
+    #response = requests.get(f"https://api.wordnik.com/v4/word.json/{word}/definitions?api_key={api_key}")
+    #data = response.json()
+    #definition = data[0]['text'] if data else "No definition found."
+    
     return definition
 
 @app.route('/get_example_sentence/<word>')
 def get_example_sentence(word):
-    api_key = 'your_wordnik_api_key'  # Replace with your Wordnik API key
-    response = requests.get(f"https://api.wordnik.com/v4/word.json/{word}/exampleSentences?api_key={api_key}")
+    response = requests.get(f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}")
     data = response.json()
-    sentence = data[0]['text'] if data else "No sentence example found."
+    sentence = data[0]['meanings'][0]['definitions'][0]['example'] if data else "No sentence example found."
+    
+    #api_key = 'your_wordnik_api_key'  # Replace with your Wordnik API key
+    #response = requests.get(f"https://api.wordnik.com/v4/word.json/{word}/exampleSentences?api_key={api_key}")
+    #data = response.json()
+    #sentence = data[0]['text'] if data else "No sentence example found."
+    
     return sentence
 
 if __name__ == '__main__':
