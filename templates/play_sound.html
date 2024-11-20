@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play Sound</title>
     <script src="https://code.responsivevoice.org/responsivevoice.js?key=Ytp4Wvua"></script>
+    #<script src="https://code.responsivevoice.org/responsivevoice.js?key=ABcd4Efgh"></script>
 </head>
 <body>
     <h2>Pronunciation of the Word: {{ current_word }}</h2>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=Ytp4Wvua"></script>
     <button onclick="responsiveVoice.speak('{{ current_word }}', 'US English Female')">Pronounce</button>
     <a href="{{ url_for('start_test', letter=request.args.get('letter')) }}">Back to Test</a>
 </body>
