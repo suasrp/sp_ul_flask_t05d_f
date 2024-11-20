@@ -12,7 +12,8 @@
         <li>{{ word }}</li>
         {% endfor %}
     </ul>
-
+    
+    <a href="{{ url_for('edit_misspelled_word_list') }}">Edit Misspelled Word List</a>
     <a href="{{ url_for('home') }}">Home</a>
 </body>
 </html>
