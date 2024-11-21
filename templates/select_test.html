@@ -8,7 +8,6 @@
 <body>
     <h1>Select a Test</h1>
     <script src="https://code.responsivevoice.org/responsivevoice.js?key={{ api_key }}"></script>
-    #<script src="https://code.responsivevoice.org/responsivevoice.js?key=Ytp4Wvua"></script>
     <ul>
         {% for letter, words in tests.items() %}
         <li><a href="{{ url_for('start_test', letter=letter) }}">{{ letter.upper() }} Test</a></li>
