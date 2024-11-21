@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
+import os
 import requests
 import random
 
@@ -152,6 +153,11 @@ def before_request():
 @app.route('/')
 def home():
     return render_template('home.html')
+
+def index():
+    # Access the environment variable
+    api_key = os.getenv('RESPONSIVE_VOICE_API_KEY', 'default_key')
+    return render_template('home.html', api_key=api_key)
 
 @app.route('/select_test')
 def select_test():
