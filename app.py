@@ -276,7 +276,7 @@ def get_example_sentence(word):
     
     response = requests.get(f'https://api.datamuse.com/words?rel_syn={word}')
     data = response.json()
-    sentence = data[0]['meanings'][0]['definitions'][0]['example'] if data else "No sentence example found."
+    #sentence = data[0]['meanings'][0]['definitions'][0]['example'] if data else "No sentence example found."
     return data
     
     #api_key = 'your_wordnik_api_key'  # Replace with your Wordnik API key
