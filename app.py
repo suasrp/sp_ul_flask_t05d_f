@@ -269,16 +269,21 @@ def get_definition(word):
 
 @app.route('/get_example_sentence/<word>')
 def get_example_sentence(word):
-    response = requests.get(f'https://api.datamuse.com/words?rel_syn={word}')
+    url = f'https://api.datamuse.com/words?rel_syn={word}'
+    response = requests.get(url)
     data = response.json()
-    sentence = data[0]['meanings'][0]['definitions'][0]['example'] if data else "No sentence example found."
+    return data
+    
+    #response = requests.get(f'https://api.datamuse.com/words?rel_syn={word}')
+    #data = response.json()
+    #sentence = data[0]['meanings'][0]['definitions'][0]['example'] if data else "No sentence example found."
     
     #api_key = 'your_wordnik_api_key'  # Replace with your Wordnik API key
     #response = requests.get(f"https://api.wordnik.com/v4/word.json/{word}/exampleSentences?api_key={api_key}")
     #data = response.json()
     #sentence = data[0]['text'] if data else "No sentence example found."
     
-    return sentence
+    #return sentence
 
 if __name__ == '__main__':
     app.run(debug=True)
