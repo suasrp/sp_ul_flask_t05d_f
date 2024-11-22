@@ -274,7 +274,7 @@ def get_example_sentence(word):
     #data = response.json()
     #return data
     
-    response = requests.get(f'https://api.datamuse.com/words?rel_syn_md_r={word}')
+    response = requests.get(f"https://api.datamuse.com/words?rel_syn_md={word}")
     data = response.json()
     #sentence = data[0]['meanings'][0]['definitions'][0]['example'] if data else "No sentence example found."
     return data
